@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "target": "es5", //
+        "module": "commonjs", //
+        "outDir": "out", // Donde transpira ts a js
+        "sourceMap": true, // Para depurar
+        "strict": true // 
+    }
+}
