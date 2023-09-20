@@ -1,6 +1,17 @@
+
+/** 
+ - Si no pone nada en get o set son públicas, no privadas.
+ - Creamos una variable privada con un _ para que no hagan set o get de
+   la variable de la interfaz.
+ - Tenemos:
+    · get y set por cada variable implementada por Greet que retorna la
+    variable que empieza por _, así evitamos el uso de la variable Greet
+    · constructor vacío ya que no lo necesitamos
+    · método sayHello() que nos devuelve el valor de las variables con _
+*/
+
 import { Greet } from "./greet";
 
-// Si no pone nada en get o set son públicas
 class Test1 implements Greet {
     private _name: string = ""
     get name(): string { return this._name }
@@ -29,6 +40,12 @@ class Test1 implements Greet {
     }
 
 }
+
+/** 
+ * Inicializamos una variable hello, que será una instancia de Test1
+ * Establecemos las propiedades de hello
+ * Usamos el método sayHello para mostrar estas propiedades
+*/
 
 var hello = new Test1()
 hello.message = "Hola mundo, en especial a ti"
