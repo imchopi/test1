@@ -2,19 +2,24 @@
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
+    "version": "0.2.0", // La versión de esta configuración de depuración.
+
+    "configurations": [ // Aquí comienzan las configuraciones de depuración.
         {
-            "type": "node",
-            "request": "launch",
-            "name": "Launch Program",
+            "type": "node", // Tipo de configuración para depurar una aplicación de Node.js.
+            "request": "launch", // Define que esta configuración se usa para iniciar la aplicación.
+            "name": "Launch Program", // Nombre descriptivo de esta configuración de lanzamiento.
+
             "skipFiles": [
-                "<node_internals>/**"
+                "<node_internals>/**" // Archivos que se omitirán durante la depuración en las partes internas de Node.js.
             ],
-            "program": "${workspaceFolder}\\main.ts",
-            "preLaunchTask": "tsc: build - tsconfig.json",
+
+            "program": "${workspaceFolder}\\main.ts", // Ruta al archivo TypeScript principal que se ejecutará y depurará.
+
+            "preLaunchTask": "tsc: build - tsconfig.json", // Tarea que se ejecutará antes del lanzamiento para compilar TypeScript a JavaScript.
+
             "outFiles": [
-                "${workspaceFolder}/**/*.js"
+                "${workspaceFolder}/**/*.js" // Rutas a los archivos JavaScript generados por la compilación TypeScript.
             ]
         }
     ]

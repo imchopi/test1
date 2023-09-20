@@ -1,9 +1,9 @@
 {
     "compilerOptions": {
-        "target": "es5", //
-        "module": "commonjs", //
-        "outDir": "out", // Donde transpira ts a js
-        "sourceMap": true, // Para depurar
-        "strict": true // 
+        "target": "es5",       // Define la versión de ECMAScript (ES) hacia la cual compilar el código TypeScript.
+        "module": "commonjs",  // Define el sistema de módulos a utilizar. "commonjs" es comúnmente usado en Node.js.
+        "outDir": "out",       // Especifica la carpeta de salida donde se colocarán los archivos JavaScript transpilados.
+        "sourceMap": true,     // Habilita la generación de archivos de mapas fuente (.map) que ayudan en la depuración.
+        "strict": true         // Habilita el modo estricto de TypeScript, que impone reglas más rigurosas y seguridad en el código.
     }
 }
